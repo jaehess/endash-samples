@@ -1,0 +1,25 @@
+
+.table-cell {
+  border-right: 1px solid rgba(0, 0, 0, .05);
+}
+
+.table-cell .sc-label-view {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Helvetica;
+  line-height: 30px !important;
+  
+  color: #333;
+}
+
+.sc-label-view.column-0 {
+  font-weight: bold !important;
+}
+
+.sc-dataview-row {
+  border-bottom: 1px solid #DDD;
+}
+
+.odd {
+  background-color: #f3f5f7;
+}
