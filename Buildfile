@@ -4,6 +4,4 @@
 # ===========================================================================
 
 # Add initial buildfile information here
-config :all, :required => ['sproutcore', 'endash'],
-	:combine_javascript => false,
-	:combine_stylesheet => false
+config :all, :required => ['sproutcore', 'endash/table']

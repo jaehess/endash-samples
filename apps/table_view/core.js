@@ -1,6 +1,6 @@
 // ==========================================================================
 // Project:   TableView
-// Copyright: ©2010 My Company, Inc.
+// Copyright: ©2011 My Company, Inc.
 // ==========================================================================
 /*globals TableView */
 
@@ -10,9 +10,6 @@
   
   @extends SC.Object
 */
-
-SC.Benchmark.verbose = YES
-
 TableView = SC.Application.create(
   /** @scope TableView.prototype */ {
 

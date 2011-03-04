@@ -5,27 +5,6 @@
 /*globals TableView */
 
 
-var tableColumns = [
-  SC.TableColumn.create({
-    key:   'displayName',
-    label: 'Title',
-    width: 500
-  }),
-  
-  SC.TableColumn.create({
-    key:   'rating',
-    label: 'Rating',
-    width: 200,
-    minWidth: 150
-  }),
-  SC.TableColumn.create({
-    key:   'votes',
-    label: 'Votes',
-    width: 200,
-    minWidth: 150
-  })  
-];
-
 // This page describes the main user interface for your application.  
 TableView.mainPage = SC.Page.design({
 
@@ -33,6 +12,7 @@ TableView.mainPage = SC.Page.design({
   // Add childViews to this pane for views to display immediately on page 
   // load.
   mainPane: SC.MainPane.design({
+    wantsTouchIntercept: YES,
     childViews: ['tableView'],
     
     tableView: SC.TableView.design({
