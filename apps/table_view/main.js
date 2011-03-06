@@ -21,7 +21,8 @@ TableView.main = function main() {
     SC.TableColumn.create({
       title: 'Title',
       key: 'title',
-      width: 200
+      width: 200,
+      isReorderable: NO
     }), 
     SC.TableColumn.create({
       title: 'Votes',
