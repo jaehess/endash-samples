@@ -18,6 +18,22 @@ TableView.main = function main() {
   var movies = TableView.store.findAll(TableView.Movie);
   
   var columns = [
+    SC.TableColumn.create({ 
+        key:   '', 
+        // title: '&nbsp;', 
+        isResizable: NO,
+        isReorderable: NO,
+        width: 50,
+        height: 30,
+        exampleView: SC.View.design({
+          isPoolable: YES,
+          layout: {width:30, height:30, centerX:0, centerY:0},
+          childViews:[SC.CheckboxView.design({
+            valueBinding: '.parentView*content.isChecked',
+            layout: {width:17, height:16, centerX:0, centerY:0}
+          })]
+        })
+    }),
     SC.TableColumn.create({
       title: 'Title',
       key: 'title',

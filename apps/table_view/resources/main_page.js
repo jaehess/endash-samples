@@ -19,18 +19,8 @@ TableView.mainPage = SC.Page.design({
       layout: { top: 0, bottom: 0, left: 0, right: 0 },
       columnsBinding: 'TableView.moviesController.columns',
       contentBinding: 'TableView.moviesController.arrangedObjects'
-    }),
-    
-    // listView: SC.ScrollView.extend({
-    //   backgroundColor: "white",
-    //   layout: { top: 0, bottom: 0, left: 400, right: 0 },
-    //   contentView: SC.ListView.design(Endash.CollectionFastPath, {
-    //     rowHeight: 35,
-    //     contentValueKey: 'title',
-    //     backgroundColor: "white",
-    //     contentBinding: 'TableView.moviesController.arrangedObjects'
-    //   })
-    // })
+      selectionBinding: 'TableView.moviesController.selection'
+    })
   })
 
 });
