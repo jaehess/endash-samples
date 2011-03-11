@@ -23,14 +23,14 @@ TableView.main = function main() {
         // title: '&nbsp;', 
         isResizable: NO,
         isReorderable: NO,
-        width: 50,
+        width: 36,
         height: 30,
         exampleView: SC.View.design({
           isPoolable: YES,
-          layout: {width:30, height:30, centerX:0, centerY:0},
+          layout: {centerX:0, centerY:0},
           childViews:[SC.CheckboxView.design({
             valueBinding: '.parentView*content.isChecked',
-            layout: {width:17, height:16, centerX:0, centerY:0}
+            layout: {width:16, height:16, centerX:0, centerY:0}
           })]
         })
     }),

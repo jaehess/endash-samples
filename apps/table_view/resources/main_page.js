@@ -18,7 +18,7 @@ TableView.mainPage = SC.Page.design({
     tableView: SC.TableView.design({
       layout: { top: 0, bottom: 0, left: 0, right: 0 },
       columnsBinding: 'TableView.moviesController.columns',
-      contentBinding: 'TableView.moviesController.arrangedObjects'
+      contentBinding: 'TableView.moviesController.arrangedObjects',
       selectionBinding: 'TableView.moviesController.selection'
     })
   })
